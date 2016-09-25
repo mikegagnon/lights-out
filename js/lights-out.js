@@ -10,10 +10,10 @@ var matrix = [
 ]
 
 var solution = [
-    [false, false, false, false],
-    [false, false, false, false],
-    [false, false, false, false],
-    [false, false, false, false]
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined]
 ]
 
 function getLightId(row, col) {
@@ -70,7 +70,7 @@ function right(col) {
 }
 
 function lightSwitch(row, col) {
-    console.log(row, col)
+
     matrix[row][col] = !matrix[row][col]
 
     var lightStatus = matrix[row][col]
@@ -112,5 +112,52 @@ function lightClick(row, col) {
         alert("You win!")
     }
 
+    solve();
+
+
+}
+
+function solutionSwitch(row, col) {
+    solution[row][col] = !solution[row][col]
+}
+
+function solutionClick(row, col) {
+    solutionSwitch(row, col)
+    solutionSwitch(above(row), col)
+    solutionSwitch(below(row), col)
+    solutionSwitch(row, left(col))
+    solutionSwitch(row, right(col))
+}
+
+function solve() {
+
+    solution = [
+        [false, false, false, false],
+        [false, false, false, false],
+        [false, false, false, false],
+        [false, false, false, false]
+    ]
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            if (matrix[row][col]) {
+                solutionClick(row, col)
+            }
+        }
+    }
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            var lightId = getLightId(row, col)
+
+            if (solution[row][col]) {
+                $("#" + lightId).text("click me")
+            } else {
+                $("#" + lightId).text("")
+            }
+        }
+    }
+
+    console.log(solution)
 }
 

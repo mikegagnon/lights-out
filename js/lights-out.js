@@ -77,6 +77,22 @@ function lightSwitch(row, col) {
 
 }
 
+function checkWin() {
+
+    var anyLightOn = false
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            if (matrix[row][col]) {
+                anyLightOn = true;
+            } 
+        }
+    }
+
+    return !anyLightOn;
+
+}
+
 function lightClick(row, col) {
 
     lightSwitch(row, col)
@@ -84,6 +100,10 @@ function lightClick(row, col) {
     lightSwitch(below(row), col)
     lightSwitch(row, left(col))
     lightSwitch(row, right(col))
+
+    if (checkWin()) {
+        alert("You win!")
+    }
 
 }
 

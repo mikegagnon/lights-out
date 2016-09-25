@@ -1,0 +1,13 @@
+
+.row {
+    clear: left;
+}
+
+.light {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left; 
+    background-color: pink;
+}

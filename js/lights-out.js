@@ -9,13 +9,17 @@ var matrix = [
     [true, true, true, true]
 ]
 
+function getLightId(row, col) {
+    return "light-" + row + "-" + col
+}
+
 for (var row = 0; row < numRows; row++) {
     for (var col = 0; col < numCols; col++) {
 
         var lightStatus = Math.random() < 0.5
         matrix[row][col] = lightStatus
 
-        var lightId = "light-" + row + "-" + col
+        var lightId = getLightId(row, col)
 
         if (lightStatus) {
             $("#" + lightId).css("background-color", "pink")
@@ -63,7 +67,7 @@ function lightSwitch(row, col) {
     matrix[row][col] = !matrix[row][col]
 
     var lightStatus = matrix[row][col]
-    var lightId = "light-" + row + "-" + col
+    var lightId = getLightId(row, col)
 
     if (lightStatus) {
         $("#" + lightId).css("background-color", "pink")

@@ -3,10 +3,17 @@ var numRows = 4
 var numCols = 4
 
 var matrix = [
-    [true, true, true, true],
-    [true, true, true, true],
-    [true, true, true, true],
-    [true, true, true, true]
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined]
+]
+
+var solution = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
 ]
 
 function getLightId(row, col) {

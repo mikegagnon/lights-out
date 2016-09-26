@@ -13,7 +13,7 @@ to keep your head above water. In that spirit: [learn the game Lights Out](https
 
 HTML is a "markup" language — which means you markup plain text with HTML tags.
 
-## Example 1
+## Example 1: Italics and Bold
 
 ```html
 <i>This text is italicized</i>
@@ -22,7 +22,7 @@ HTML is a "markup" language — which means you markup plain text with HTML tags
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example01.html).
 
-## Example 2
+## Example 2: Paragraphs
 
 You can use the `<p>` tag to put text in separate paragraphs.
 
@@ -38,7 +38,7 @@ You can use the `<p>` tag to put text in separate paragraphs.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example02.html).
 
-## Example 3
+## Example 3: Lists
 
 You can use the `<ul>` and `<li>` tags to create a list.
 
@@ -51,7 +51,7 @@ You can use the `<ul>` and `<li>` tags to create a list.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example03.html).
 
-# Lecture 2: Proper HTML
+## Example 4: Proper HTML
 
 A proper HTML file looks like this:
 
@@ -70,7 +70,7 @@ A proper HTML file looks like this:
 </html>
 ```
 
-See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
+See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.html).
 
 - The content inside the `<head>` tag doesn't get displayed
 - The `<title>` tag may only appear inside the `<head>` tag. The text inside the `<title>` tag is displayed on the tab in your browser.

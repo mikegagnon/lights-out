@@ -11,11 +11,43 @@ to keep your head above water. In that spirit: [learn the game Lights Out](https
 
 # Lecture 1. Intro to HTML
 
-HTML is a "markup" language — which means you markup plain text with HTML keywords.
+HTML is a "markup" language — which means you markup plain text with HTML tags.
 
-For example:
+## Example 1
 
 ```html
 <i>This text is italicized</i>
 <b>This text is bolded</b>
 ```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture01/example01.html).
+
+## Example 2
+
+You can use the `<p>` tag to put text in separate paragraphs.
+
+```html
+<p>
+  <i>This text is italicized</i>
+</p>
+
+<p>
+  <b>This text is bolded</b>
+</p>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture01/example02.html).
+
+## Example 3
+
+You can use the `<ul>` and `<li>` tags to create a list.
+
+```html
+<ul>
+  <li><i>This text is italicized</i></li>
+  <li><b>This text is bolded</b></li>
+</ul>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture01/example03.html).
+

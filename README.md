@@ -71,3 +71,7 @@ A proper HTML file looks like this:
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
+
+- The content inside the `<head>` tag doesn't get displayed
+- The `<title>` tag may only appear inside the `<head>` tag. The text inside the `<title>` tag is displayed on the tab in your browser.
+- The `<body>` tag stores everything that should be displayed

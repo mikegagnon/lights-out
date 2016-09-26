@@ -6,7 +6,8 @@ Let's make a game called Lights Out, while learning the bare essentials of JS + 
 I assume you’ve already taken [Codecademy’s JavaScript course](https://www.codecademy.com/learn/javascript).
 
 These lecture notes are just notes; they are intended to be accompanied with in-person teaching.
-And another thing, my approach in these lectures is to throw you in the deep end, and show you just enough
+
+My approach in these lectures is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: your first task is to [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
 
 # Lecture 1. Intro to HTML

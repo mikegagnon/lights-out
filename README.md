@@ -7,3 +7,14 @@ I assume you’ve already taken [Codecademy’s JavaScript course](https://www.c
 
 Overall, my approach in these lecture notes is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
+
+# Lecture 1. Intro to HTML
+
+HTML is a "markup" language — which means you markup plain text with HTML keywords.
+
+For example:
+
+```html
+<i>This text is italicized</i>
+<b>This text is bolded</b>
+```

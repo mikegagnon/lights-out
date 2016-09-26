@@ -6,4 +6,4 @@ If you’d like to know just enough programming to be dangerous, I have a projec
 I assume you’ve already taken [Codecademy’s JavaScript course](https://www.codecademy.com/learn/javascript).
 
 Overall, my approach in these lecture notes is to throw you in the deep end, and show you just enough
-to keep your head above water. In that spirit: go [learn the game Lights Out](https://mikegagnon.github.io/lights-out/)
+to keep your head above water. In that spirit: [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).

@@ -51,3 +51,23 @@ You can use the `<ul>` and `<li>` tags to create a list.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example03.html).
 
+# Lecture 2: Proper HTML
+
+A proper HTML file looks like this:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+  </head>
+  <body>
+    <ul>
+      <li><i>This text is italicized</i></li>
+      <li><b>This text is bolded</b></li>
+    </ul>
+  </body>
+</html>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).

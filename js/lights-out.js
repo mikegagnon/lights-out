@@ -16,6 +16,8 @@ var solution = [
     [undefined, undefined, undefined, undefined]
 ]
 
+var showSolution = false
+
 function getLightId(row, col) {
     return "light-" + row + "-" + col
 }
@@ -37,7 +39,9 @@ for (var row = 0; row < numRows; row++) {
     }
 }
 
-solve()
+if (showSolution) {
+    solve();
+}
 
 function above(row) {
     if (row == 0) {
@@ -114,9 +118,9 @@ function lightClick(row, col) {
         alert("You win!")
     }
 
-    solve();
-
-
+    if (showSolution) {
+        solve();
+    }
 }
 
 function solutionSwitch(row, col) {
@@ -161,5 +165,26 @@ function solve() {
     }
 
     console.log(solution)
+}
+
+function hideSolution() {
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            var lightId = getLightId(row, col)
+            $("#" + lightId).text("")
+        }
+    }
+}
+
+function showHideSolution() {
+    showSolution = !showSolution;
+
+    if (showSolution) {
+        solve();
+        $("#showHideButton").text("Hide solution")
+    } else {
+        hideSolution();
+        $("#showHideButton").text("Show solution")
+    }
 }
 

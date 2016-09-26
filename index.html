@@ -35,6 +35,27 @@
     <button id="showHideButton" onclick="showHideSolution()">Show solution</button>
   </div>
 
+  <div class="row">
+    <ul>
+
+      <li>The goal is to turn all the lights off</li>
+      <li>A pink square is a light that is ON</li>
+      <li>A gray square is a light that is OFF</li>
+      <li>When you click a light, it toggles the following lights in a cross pattern:</li>
+      <ul>
+        <li>The light you clicked</li>
+        <li>The light <i>above</i> the light you clicked</li>
+        <li>The light <i>below</i> the light you clicked</li>
+        <li>The light <i>to the left</i> of the light you clicked</li>
+        <li>The light <i>to the right</i> of the light you clicked</li>
+      </ul>
+      <li>If there is no light <i>below</i> the light you clicked, then
+      it wraps around (torus style) and toggles the light in the first row.
+      </li>
+      <li>And so on for each of the four directions</li>
+    </ul>
+  </div>
+
 </body>
 
 

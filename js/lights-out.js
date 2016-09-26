@@ -164,7 +164,6 @@ function solve() {
         }
     }
 
-    console.log(solution)
 }
 
 function hideSolution() {

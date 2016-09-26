@@ -4,11 +4,14 @@
 }
 
 .light {
-    height: 100px;
+    height: 60px;
     width: 100px;
     margin-left: 5px;
     margin-top: 5px;
     float: left; 
     background-color: pink;
     cursor: pointer;
+    text-align: center;
+    font-family: Helvetica;
+    padding-top: 40px
 }

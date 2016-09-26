@@ -37,6 +37,8 @@ for (var row = 0; row < numRows; row++) {
     }
 }
 
+solve()
+
 function above(row) {
     if (row == 0) {
         return numRows -1

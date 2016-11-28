@@ -81,7 +81,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.htm
 
 CSS lets you *style* HTML.
 
-## Example 1
+## Example 1: style
 
 For instance, you can use CSS to change the background color of an HTML element.
 
@@ -94,3 +94,55 @@ For instance, you can use CSS to change the background color of an HTML element.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
 
+## Example 2: .css file
+
+There are several ways to sprinkle CSS on your HTML.
+
+One of the ways is using `style="..."` inside an HTML tag (as in Example 1).
+
+The most canonical way is to put your CSS definitions in a `.css` file,
+then import that `.css` file into your HTML file.
+
+For example, create a new file named `example02-style.css` and add the following into that file.
+
+```css
+.foo {
+    background: pink;
+}
+
+.bar {
+    background: grey;
+}
+```
+
+This creates two CSS "classes": class `foo` and class `bar`.
+
+Now create a file named `example02.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="example02-style.css">
+  </head>
+  <body>
+    <ul>
+      <li class="foo"><i>This text is italicized</i></li>
+      <li class="bar"><b>This text is bolded</b></li>
+    </ul>
+  </body>
+</html>
+```
+
+Notice the following lines:
+
+* `<link rel="stylesheet" type="text/css" href="example02-style.css">`
+* `<li class="foo"><i>This text is italicized</i></li>`
+* `<li class="bar"><b>This text is bolded</b></li>`
+
+This `<link ...>` tag imports the file `example02-style.css` into the HTML file.
+
+The `<li class="...">` tags attach CSS classes to HTML tags.
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture02/example02.html).

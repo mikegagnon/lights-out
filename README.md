@@ -81,7 +81,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.htm
 
 CSS lets you *style* HTML.
 
-## Example 1
+## Example 1: style
 
 For instance, you can use CSS to change the background color of an HTML element.
 
@@ -94,7 +94,7 @@ For instance, you can use CSS to change the background color of an HTML element.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
 
-## Example 2
+## Example 2: .css file
 
 There are several ways to sprinkle CSS on your HTML.
 

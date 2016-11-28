@@ -141,7 +141,8 @@ Notice the following lines:
 * `<li class="foo"><i>This text is italicized</i></li>`
 * `<li class="bar"><b>This text is bolded</b></li>`
 
-This `<link ...>` tag imports the file `example02-style.css` into the HTML file
-The `<li class="...">` tags attach CSS classes to HTML tags
+This `<link ...>` tag imports the file `example02-style.css` into the HTML file.
+
+The `<li class="...">` tags attach CSS classes to HTML tags.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example02.html).

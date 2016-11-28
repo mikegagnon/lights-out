@@ -76,3 +76,21 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.htm
 - The content inside the `<head>` tag doesn't get displayed
 - The `<title>` tag may only appear inside the `<head>` tag. The text inside the `<title>` tag is displayed on the tab in your browser.
 - The `<body>` tag stores everything that should be displayed
+
+# Lecture 2. Intro to CSS
+
+CSS lets you *style* HTML.
+
+## Example 1
+
+For instance, you can use CSS to change the background color of an HTML element.
+
+```html
+<ul>
+  <li style="background: pink"><i>This text is italicized</i></li>
+  <li style="background: grey"><b>This text is bolded</b></li>
+</ul>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
+

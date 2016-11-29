@@ -207,4 +207,4 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture03/example02.htm
 
 ### `index.html`
 
-Just use the same `index.html` file from 
+Just use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)

@@ -162,15 +162,6 @@ The `<div>` tag acts kind of like the paragraph tag (see [Lecture 1, Example 2](
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example01.html).
 
-## Example 2: Styling \<div> tags
-
-`<div>` tags are only interesting if you style them with CSS.
-
-This example, and the next few examples, demonstrate the CSS you'll need to know
-for making the Lights Out game.
-
-First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
-
 ### `example2-style.css`
 
 ```css
@@ -182,6 +173,15 @@ First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
     background: grey;
 }
 ```
+
+## Example 2: Styling \<div> tags
+
+`<div>` tags are only interesting if you style them with CSS.
+
+This example, and the next few examples, demonstrate the CSS you'll need to know
+for making the Lights Out game.
+
+First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
 
 ### `example2.html`
 
@@ -198,3 +198,5 @@ First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
   </body>
 </html>
 ```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example02.html).

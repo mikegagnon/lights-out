@@ -203,8 +203,28 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture03/example02.htm
 
 ## Example 3: Height and width
 
+You can set the height and width of a `<div>` tag using CSS as follows:
+
 ### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+}
+```
+
+The `px` suffix indicates that the unit of measurement is pixels.
 
 ### `index.html`
 
 Just use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example03.html).

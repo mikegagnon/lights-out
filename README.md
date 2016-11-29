@@ -103,7 +103,7 @@ One of the ways is using `style="..."` inside an HTML tag (as in Example 1).
 The most canonical way is to put your CSS definitions in a `.css` file,
 then import that `.css` file into your HTML file.
 
-For example, create a new file named `example02-style.css` and add the following into that file.
+For example, create a new file named `style.css` and add the following into that file.
 
 ```css
 .foo {
@@ -124,7 +124,7 @@ Now create a file named `index.html`:
 <html>
   <head>
     <title>Lights Out</title>
-    <link rel="stylesheet" type="text/css" href="example02-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <ul>
@@ -141,7 +141,7 @@ Notice the following lines:
 * `<li class="foo"><i>This text is italicized</i></li>`
 * `<li class="bar"><b>This text is bolded</b></li>`
 
-This `<link ...>` tag imports the file `example02-style.css` into the HTML file.
+This `<link ...>` tag imports the file `style.css` into the HTML file.
 
 The `<li class="...">` tags attach CSS classes to HTML tags.
 
@@ -171,7 +171,7 @@ for making the Lights Out game.
 
 First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
 
-### `example2-style.css`
+### `style.css`
 
 ```css
 .foo {

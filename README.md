@@ -23,7 +23,7 @@ HTML is a "markup" language — which means you markup plain text with HTML tags
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example01.html).
 
-## Example 2: Paragraphs
+## <a name="ptag">Example 2: Paragraphs</a>
 
 You can use the `<p>` tag to put text in separate paragraphs.
 
@@ -94,7 +94,7 @@ For instance, you can use CSS to change the background color of an HTML element.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example01.html).
 
-## Example 2: .css file
+## <a name="foobar">Example 2: .css file</a>
 
 There are several ways to sprinkle CSS on your HTML.
 
@@ -153,7 +153,7 @@ The `<div>` tag is a special HTML tag.
 
 ## Example 1: Like the \<p> tag
 
-The `<div>` tag acts kind of like the paragraph tag (`<p>`).
+The `<div>` tag acts kind of like the paragraph tag (see [Lecture 1, Example 2](#ptag)).
 
 ```html
 <div>First div</div>
@@ -161,3 +161,40 @@ The `<div>` tag acts kind of like the paragraph tag (`<p>`).
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example01.html).
+
+## Example 2: Styling \<div> tags
+
+`<div>` tags are only interesting if you style them with CSS.
+
+This example, and the next few examples, demonstrate the CSS you'll need to know
+for making the Lights Out game.
+
+First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
+
+### `example2-style.css`
+
+```css
+.foo {
+    background: pink;
+}
+
+.bar {
+    background: grey;
+}
+```
+
+### `example2.html`
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="example02-style.css">
+  </head>
+  <body>
+    <div class="foo">First div</div>
+    <div class="bar">Second div</div>
+  </body>
+</html>
+```

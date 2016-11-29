@@ -1,0 +1,14 @@
+
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+}

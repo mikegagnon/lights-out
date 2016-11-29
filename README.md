@@ -162,7 +162,7 @@ The `<div>` tag acts kind of like the paragraph tag (see [Lecture 1, Example 2](
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example01.html).
 
-## Example 2: Styling \<div> tags
+## <a name="lecture3-example2">Example 2: Styling \<div> tags</a>
 
 `<div>` tags are only interesting if you style them with CSS.
 
@@ -190,7 +190,7 @@ First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
 <html>
   <head>
     <title>Lights Out</title>
-    <link rel="stylesheet" type="text/css" href="example02-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <div class="foo">First div</div>
@@ -200,3 +200,11 @@ First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example02.html).
+
+## Example 3: Height and width
+
+### `style.css`
+
+### `index.html`
+
+Just use the same `index.html` file from 

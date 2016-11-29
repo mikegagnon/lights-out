@@ -289,7 +289,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture03/example05.htm
 
 ## Example 6: Text align center
 
-To center text within a `<div>` element, use the `text-align` CSS property.
+To *horizontally* center text within a `<div>` element, use the `text-align` CSS property.
 
 ### `style.css`
 
@@ -318,3 +318,39 @@ To center text within a `<div>` element, use the `text-align` CSS property.
 Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example06.html).
+
+## Example 7: Vertical centering
+
+To *vertically* center text within a `<div>` element, use the `line-height` CSS property.
+
+Set the `line-height` property equal to the `height` property; in this case, `100px`.
+
+### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+```
+
+### `index.html`
+
+Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example07.html).

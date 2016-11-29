@@ -256,3 +256,33 @@ You can use the `float` property in CSS to place `<div>` elements left-to-right.
 Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example04.html).
+
+## Example 5: Margin left
+
+To add horizontal white space between `<div>` elements, use the `margin-left` CSS property:
+
+### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+}
+```
+
+### `index.html`
+
+Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example05.html).

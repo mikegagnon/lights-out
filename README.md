@@ -146,3 +146,18 @@ This `<link ...>` tag imports the file `example02-style.css` into the HTML file.
 The `<li class="...">` tags attach CSS classes to HTML tags.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example02.html).
+
+# Lecture 3. The \<div> tag
+
+The `<div>` tag is a special HTML tag.
+
+## Example 1: Like the \<p> tag
+
+The `<div>` tag acts kind of like the paragraph tag (`<p>`).
+
+```html
+<div>First div</div>
+<div>Second div</div>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example01.html).

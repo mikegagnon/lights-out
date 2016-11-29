@@ -286,3 +286,35 @@ To add horizontal white space between `<div>` elements, use the `margin-left` CS
 Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example05.html).
+
+## Example 6: Text align center
+
+To center text within a `<div>` element, use the `text-align` CSS property.
+
+### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+```
+
+### `index.html`
+
+Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example06.html).

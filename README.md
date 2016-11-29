@@ -117,7 +117,7 @@ For example, create a new file named `example02-style.css` and add the following
 
 This creates two CSS "classes": class `foo` and class `bar`.
 
-Now create a file named `example02.html`:
+Now create a file named `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -183,7 +183,7 @@ First, we'll style some `<divs>` like [Lecture 2, Example 2](#foobar).
 }
 ```
 
-### `example2.html`
+### `index.html`
 
 ```html
 <!DOCTYPE html>

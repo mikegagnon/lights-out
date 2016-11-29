@@ -23,7 +23,7 @@ HTML is a "markup" language — which means you markup plain text with HTML tags
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture01/example01.html).
 
-## Example 2: Paragraphs
+## <a name="ptag">Example 2: Paragraphs</a>
 
 You can use the `<p>` tag to put text in separate paragraphs.
 
@@ -153,7 +153,7 @@ The `<div>` tag is a special HTML tag.
 
 ## Example 1: Like the \<p> tag
 
-The `<div>` tag acts kind of like the paragraph tag (`<p>`).
+The `<div>` tag acts kind of like the paragraph tag (see [Lecture 1, Example 2](#ptag)).
 
 ```html
 <div>First div</div>

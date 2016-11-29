@@ -354,3 +354,41 @@ Set the `line-height` property equal to the `height` property; in this case, `10
 Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example07.html).
+
+## Example 8: Font
+
+To set the font within a `<div>` element, use the `font-family` CSS property.
+
+In this case, set the `font-family` property equal to `Helvetica`.
+
+### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+}
+```
+
+### `index.html`
+
+Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example08.html).

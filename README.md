@@ -228,3 +228,31 @@ The `px` suffix indicates that the unit of measurement is pixels.
 Just use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example03.html).
+
+## Example 4: Float left
+
+You can use the `float` property in CSS to place `<div>` elements left-to-right.
+
+### `style.css`
+
+```css
+.foo {
+    background: pink;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.bar {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+```
+
+### `index.html`
+
+Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture03/example04.html).

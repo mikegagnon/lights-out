@@ -385,7 +385,7 @@ In this case, set the `font-family` property equal to `Helvetica`.
     line-height: 100px;
     font-family: Helvetica;
 }
-```s
+```
 
 ### `index.html`
 

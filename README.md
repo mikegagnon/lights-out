@@ -418,3 +418,23 @@ The CSS is very similar to the CSS from [Lecture 3, Example 8](#lec3ex8).
     font-family: Helvetica;
 }
 ```
+
+### `index.html`
+
+The HTML declares 4 divs with `class=light`.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+  </body>
+</html>
+```

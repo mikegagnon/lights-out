@@ -511,3 +511,5 @@ Then, we encapsulate each row of lights in a `row` div.
   </body>
 </html>
 ```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture04/example02.html).

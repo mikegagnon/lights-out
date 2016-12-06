@@ -440,3 +440,74 @@ The HTML declares 4 divs with `class=light`.
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture04/example01.html).
+
+## Step 2: 4 rows of lights
+
+Recall from Step 1, that the lights are arranged horizontally.
+
+This is perfect for creating a single row of lights, but how
+do we create multiple rows of lights?
+
+The trick is to *clear* the `float: left` CSS property by:
+
+1. Creating a `row` class, and
+2. Using `clear: left` in the `row` class
+
+### `style.css`
+
+```css
+.row {
+    clear: left;
+}
+
+.light {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+}
+```
+
+### `index.html`
+
+Then, we encapsulate each row of lights in a `row` div.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="example02-style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+  </body>
+</html>
+```

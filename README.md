@@ -549,3 +549,5 @@ Now we add `margin-top: 5px;` to the `light` class in `style.css`.
 ### `index.html`
 
 Just use the same `index.html` file from [Lecture 4, Step 2](#lec4ex2).
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture04/example03.html).

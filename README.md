@@ -257,7 +257,7 @@ Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example04.html).
 
-## Example 5: Margin left
+## <a name="lec3ex5">Example 5: Margin left</a>
 
 To add horizontal white space between `<div>` elements, use the `margin-left` CSS property:
 
@@ -441,7 +441,7 @@ The HTML declares 4 divs with `class=light`.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture04/example01.html).
 
-## Step 2: 4 rows of lights
+## <a name="lec4ex2">Step 2: 4 rows of lights</a>
 
 Recall from Step 1, that the lights are arranged horizontally.
 
@@ -513,3 +513,39 @@ Then, we encapsulate each row of lights in a `row` div.
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture04/example02.html).
+
+## Step 3: Fixing white space
+
+There is a problem from Step 2. Namely, there is no vertical whitespace between
+lights.
+
+We fix this by adding vertical whitespace above each light.
+
+Recall from [Lecture 3, Example 5](#lec3ex5), we created horizontal
+whitespace between lights using `margin-left: 5px;` in `style.css`.
+
+Now we add `margin-top: 5px;` to the `light` class in `style.css`.
+
+### `style.css`
+
+```css
+.row {
+    clear: left;
+}
+
+.light {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+}
+```
+
+### `index.html`
+
+Just use the same `index.html` file from [Lecture 4, Step 2](#lec4ex2).

@@ -1,0 +1,11 @@
+
+.light {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+}

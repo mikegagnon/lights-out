@@ -398,7 +398,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture03/example08.htm
 In this lecture, we'll create the HTML and CSS framework for the Lights Out game,
 using the things we've learned from the previous lectures.
 
-## Step 1: Lights
+## Step 1: A row of lights
 
 Create a row of four lights.
 

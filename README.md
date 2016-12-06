@@ -438,3 +438,5 @@ The HTML declares 4 divs with `class=light`.
   </body>
 </html>
 ```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture04/example01.html).

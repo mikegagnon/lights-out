@@ -615,3 +615,71 @@ Just use the same `style` file from [Lecture 3, Example 2](#lecture3-example2)
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example01.html).
+
+## Step 2. `lights-out.js`
+
+In this step, we use `onclick` to invoke Javascript in a file named `lights-out.js`
+
+First, we create a file named `lights-out.js` and add a function called `lightClick`.
+
+```js
+function lightClick(row, col) {
+    alert("You clicked the light at row " + row + ", column " + col);
+}
+```
+
+Then, we import `lights-out.js` into the HTML file. Notice the new
+`<script ... >` element inside the `<head>` component:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lights-out.js"></script>
+  </head>
+  ...
+```
+
+Finally, we set the `onclick` property of each light to call the
+`lightClick(...)` function:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="example02-style.css">
+    <script src="example02.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="light" onclick="lightClick(0, 0)"></div>
+      <div class="light" onclick="lightClick(0, 1)"></div>
+      <div class="light" onclick="lightClick(0, 2)"></div>
+      <div class="light" onclick="lightClick(0, 3)"></div>
+    </div>
+    <div class="row">
+      <div class="light" onclick="lightClick(1, 0)"></div>
+      <div class="light" onclick="lightClick(1, 1)"></div>
+      <div class="light" onclick="lightClick(1, 2)"></div>
+      <div class="light" onclick="lightClick(1, 3)"></div>
+    </div>
+    <div class="row">
+      <div class="light" onclick="lightClick(2, 0)"></div>
+      <div class="light" onclick="lightClick(2, 1)"></div>
+      <div class="light" onclick="lightClick(2, 2)"></div>
+      <div class="light" onclick="lightClick(2, 3)"></div>
+    </div>
+    <div class="row">
+      <div class="light" onclick="lightClick(3, 0)"></div>
+      <div class="light" onclick="lightClick(3, 1)"></div>
+      <div class="light" onclick="lightClick(3, 2)"></div>
+      <div class="light" onclick="lightClick(3, 3)"></div>
+    </div>
+  </body>
+</html>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture05/example02.html).

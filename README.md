@@ -10,6 +10,8 @@ These lecture notes are just notes; they are intended to be accompanied with in-
 My approach in these lectures is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: your first task is to [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
 
+# PART 1. HTML and CSS
+
 # Lecture 1. Intro to HTML
 
 HTML is a "markup" language — which means you markup plain text with HTML tags.
@@ -549,3 +551,67 @@ Now we add `margin-top: 5px;` to the `light` class in `style.css`.
 ### `index.html`
 
 Just use the same `index.html` file from [Lecture 4, Step 2](#lec4ex2).
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture04/example03.html).
+
+# PART 2. Javascript
+
+# Lecture 5
+
+This lecture introduces how Javascript can interact with HTML and CSS.
+
+## Step 1. `onclick`
+
+You can use `onclick` to detect (and respond to) clicks on HTML elements.
+
+For example, you can modify one of the `light` divs as so:
+
+```html
+<div class="light" onclick="alert('You clicked a light')"></div>
+```
+
+`alert(...)` is a Javscript function that creates a pop-up with the given text.
+
+### `style.css`
+
+Just use the same `style` file from [Lecture 3, Example 2](#lecture3-example2)
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="example01-style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="light" onclick="alert('You clicked the top-left light')"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="row">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+  </body>
+</html>
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture05/example01.html).

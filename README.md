@@ -683,3 +683,12 @@ Finally, we set the `onclick` property of each light to call the
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example02.html).
+
+## Step 3. Turning lights pink
+
+This step shows how use jQuery to turn a light to pink when you click on it.
+
+The way it works is:
+
+1. We give every light a unique ID
+2. We use jQuery to change the color of the `<div>` for the clicked light 

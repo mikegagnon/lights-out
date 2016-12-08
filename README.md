@@ -690,5 +690,87 @@ This step shows how use jQuery to turn a light to pink when you click on it.
 
 The way it works is:
 
-1. We give every light a unique ID
-2. We use jQuery to change the color of the `<div>` for the clicked light 
+1. Import jQuery
+2. Give every light a unique ID
+3. Use jQuery to change the color of the `<div>` for the clicked light 
+
+### Import jQuery
+
+jQuery is a Javascript library that makes it easier to interact with HTML,
+as opposed to using pure Javascript alone.
+
+Download jQuery from [here](https://code.jquery.com/jquery-3.1.1.js), 
+rename the file to `jquery.js`, and put
+it in the same folder with `index.html`, `style.css`, etc.
+
+Edit the `<head>` of `index.html` to import jQuery:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lights-out.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+  ...
+```
+
+### Give every light a unique ID
+
+Give each light a unique ID, based on the light's row and column:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lights-out.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+  <div class="row">
+    <div class="light" id="light-0-0" onclick="lightClick(0, 0)"></div>
+    <div class="light" id="light-0-1" onclick="lightClick(0, 1)"></div>
+    <div class="light" id="light-0-2" onclick="lightClick(0, 2)"></div>
+    <div class="light" id="light-0-3" onclick="lightClick(0, 3)"></div>
+  </div>
+  <div class="row">
+    <div class="light" id="light-1-0" onclick="lightClick(1, 0)"></div>
+    <div class="light" id="light-1-1" onclick="lightClick(1, 1)"></div>
+    <div class="light" id="light-1-2" onclick="lightClick(1, 2)"></div>
+    <div class="light" id="light-1-3" onclick="lightClick(1, 3)"></div>
+  </div>
+  <div class="row">
+    <div class="light" id="light-2-0" onclick="lightClick(2, 0)"></div>
+    <div class="light" id="light-2-1" onclick="lightClick(2, 1)"></div>
+    <div class="light" id="light-2-2" onclick="lightClick(2, 2)"></div>
+    <div class="light" id="light-2-3" onclick="lightClick(2, 3)"></div>
+  </div>
+  <div class="row">
+    <div class="light" id="light-3-0" onclick="lightClick(3, 0)"></div>
+    <div class="light" id="light-3-1" onclick="lightClick(3, 1)"></div>
+    <div class="light" id="light-3-2" onclick="lightClick(3, 2)"></div>
+    <div class="light" id="light-3-3" onclick="lightClick(3, 3)"></div>
+  </div>
+  </body>
+</html>
+```
+
+### Use jQuery to change the color of the `<div>` for the clicked light 
+
+Edit `lights-out.js`:
+
+```js
+function lightClick(row, col) {
+    var lightId = "light-" + row + "-" + col;
+    $("#" + lightId).css("background-color", "pink")
+}
+```
+
+Here's how it works:
+
+- `$("#" + lightId)` "selects" the div for the light at `row`, `col`, and returns an object representing the selected `<div>` element
+- `.css` is a method on the object returned by `$("#" + lightId)`. It changes the CSS for the selected `<div>`

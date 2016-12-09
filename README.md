@@ -822,3 +822,10 @@ Now, you'll develop the game a bit further so that:
 - when you click a *grey* light, the light turns *pink*
 
 Go for it!
+
+- [Hint 1](#c1h1)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+# PART 4. HINTS
+
+## <a name="c1h1">Challenge 1, Hint 1</a>

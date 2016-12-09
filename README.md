@@ -832,6 +832,7 @@ googling it, and (c) you've asked your instructor for help.
 - [Hint 4](#c1h4)
 - [Hint 5](#c1h5)
 - [Hint 6](#c1h6)
+- [Solution](https://mikegagnon.github.io/lights-out/challenge01/index.html)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

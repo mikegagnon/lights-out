@@ -808,3 +808,17 @@ To accomplish this feat, add `cursor: pointer;` to the `light` class in `style.c
 ```
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example04.html).
+
+# PART 3. CODING CHALLENGES
+
+# Challenge 1. Toggle lights
+
+At this point, we have developed the Lights Out game to the point where if you click
+a light, the light turns pink.
+
+Now, you'll develop the game a bit further so that:
+
+- when you click a *pink* light, the light turns *grey*
+- when you click a *grey* light, the light turns *pink*
+
+Go for it!

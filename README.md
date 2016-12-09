@@ -5,7 +5,7 @@
 Let's make a game called Lights Out, while learning the bare essentials of JS + HTML + CSS.
 I assume you’ve already taken [Codecademy’s JavaScript course](https://www.codecademy.com/learn/javascript).
 
-These lecture notes are just notes; they are intended to be accompanied with in-person teaching.
+These lecture notes are just notes; they are intended to be accompanied with in-person instruction.
 
 My approach in these lectures is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: your first task is to [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
@@ -823,9 +823,24 @@ Now, you'll develop the game a bit further so that:
 
 Go for it!
 
+Never lookup a hint, until after you've tried figuring it out on your own, you've tried
+googling it, and you've asked your instructor for help.
+
 - [Hint 1](#c1h1)
+- [Hint 2](#c1h2)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 # PART 4. HINTS
 
 ## <a name="c1h1">Challenge 1, Hint 1</a>
+
+Use a 2-dimensional array (aka a *matrix*) to keep track of which lights are turned on, and which
+lights are turned off.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c1h2">Challenge 1, Hint 2</a>
+
+- Whenever a light is clicked, toggle the corresponding boolean value in the matrix
+- Update the color of the light based on the value in the matrix

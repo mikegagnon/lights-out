@@ -778,7 +778,33 @@ Here's how it works:
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example03.html).
 
-## Step. Just a dash more CSS
+## Step 4. Just a dash more CSS
 
 On the web, it is conventional for the mouse pointer to turn into a "gloved hand" when the mouse is hovering over a clickable element.
 
+![Mouse pointers](pointers.png)
+
+Therefore, we want a gloved-hand pointer to appear when the mouse hovers over the lights (since the lights are clickable).
+
+To accomplish this feats, add `cursor: pointer;` to the `light` class in `style.css`:
+
+```css
+.row {
+    clear: left;
+}
+
+.light {
+    background: grey;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+```
+
+See the [result](https://mikegagnon.github.io/lights-out/lecture05/example04.html).

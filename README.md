@@ -777,3 +777,8 @@ Here's how it works:
 - `.css` is a method on the object returned by `$("#" + lightId)`. It changes the CSS for the selected `<div>`
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example03.html).
+
+## Step. Just a dash more CSS
+
+On the web, it is conventional for the mouse pointer to turn into a "gloved hand" when the mouse is hovering over a clickable element.
+

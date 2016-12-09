@@ -772,7 +772,8 @@ function lightClick(row, col) {
 
 Here's how it works:
 
-- `$("#" + lightId)` "selects" the div for the light at `row`, `col`, and returns an object representing the selected `<div>` element
+- `$` is a reference to the jQuery object
+- `$("#" + lightId)` is a method invocation that "selects" the div for the light at `row`, `col`, and returns an object representing the selected `<div>` element
 - `.css` is a method on the object returned by `$("#" + lightId)`. It changes the CSS for the selected `<div>`
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example03.html).

@@ -823,7 +823,7 @@ Now, you'll develop the game a bit further so that:
 
 Go for it!
 
-Never lookup a hint until after (a) you've tried figuring it out on your own, (b) you've tried
+Do not lookup a hint until after (a) you've tried figuring it out on your own, (b) you've tried
 googling it, and (c) you've asked your instructor for help.
 
 - [Hint 1](#c1h1)

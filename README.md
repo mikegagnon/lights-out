@@ -832,7 +832,8 @@ googling it, and (c) you've asked your instructor for help.
 - [Hint 4](#c1h4)
 - [Hint 5](#c1h5)
 - [Hint 6](#c1h6)
-- [Solution](https://mikegagnon.github.io/lights-out/challenge01/index.html)
+- [Solution](#c1solution)
+- [See result](https://mikegagnon.github.io/lights-out/challenge01/index.html)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -889,6 +890,59 @@ Update the color of the light based on the value in the matrix
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## <a name="c1h6">Challenge 1, Hint 6</a>
+
+Here's how to update a light color based on the value in the matrix:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col]
+
+    var color;
+
+    if (matrix[row][col]) {
+        color = "pink"
+    } else {
+        color = "gray"
+    }
+
+    var lightId = "light-" + row + "-" + col;
+
+    $("#" + lightId).css("background-color", color)
+}
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c1solution">Challenge 1, Solution</a>
+
+### Part 1
+
+Define a matrix in `lights-out.js`:
+
+```js
+var matrix = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
+]
+```
+
+### Part 2
+
+Toggle lights in the matrix like this in `lights-out.js`:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col]
+    
+    ...
+ }
+```
+
+### Part 3
 
 Here's how to update a light color based on the value in the matrix:
 

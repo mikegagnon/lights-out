@@ -823,11 +823,13 @@ Now, you'll develop the game a bit further so that:
 
 Go for it!
 
-Never lookup a hint, until after you've tried figuring it out on your own, you've tried
-googling it, and you've asked your instructor for help.
+Never lookup a hint until after (a) you've tried figuring it out on your own, (b) you've tried
+googling it, and (c) you've asked your instructor for help.
 
 - [Hint 1](#c1h1)
 - [Hint 2](#c1h2)
+- [Hint 3](#c1h3)
+- [Hint 4](#c1h4)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -841,6 +843,21 @@ lights are turned off.
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## <a name="c1h2">Challenge 1, Hint 2</a>
+
+You can define a matrix like this in `lights-out.js`:
+
+```js
+var matrix = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
+]
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c1h3">Challenge 1, Hint 3</a>
 
 - Whenever a light is clicked, toggle the corresponding boolean value in the matrix
 - Update the color of the light based on the value in the matrix

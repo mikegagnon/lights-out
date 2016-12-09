@@ -830,6 +830,8 @@ googling it, and (c) you've asked your instructor for help.
 - [Hint 2](#c1h2)
 - [Hint 3](#c1h3)
 - [Hint 4](#c1h4)
+- [Hint 5](#c1h5)
+- [Hint 6](#c1h6)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -859,5 +861,51 @@ var matrix = [
 
 ## <a name="c1h3">Challenge 1, Hint 3</a>
 
-- Whenever a light is clicked, toggle the corresponding boolean value in the matrix
-- Update the color of the light based on the value in the matrix
+Whenever a light is clicked, toggle the corresponding boolean value in the matrix
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c1h4">Challenge 1, Hint 4</a>
+
+You can toggle a value in the matrix like this in `lights-out.js`:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col]
+    
+    ...
+ }
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+## <a name="c1h5">Challenge 1, Hint 5</a>
+
+Update the color of the light based on the value in the matrix
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c1h6">Challenge 1, Hint 6</a>
+
+Here's how to update a light color based on the value in the matrix:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col]
+
+    var color;
+
+    if (matrix[row][col]) {
+        color = "pink"
+    } else {
+        color = "gray"
+    }
+
+    var lightId = "light-" + row + "-" + col;
+
+    $("#" + lightId).css("background-color", color)
+}
+```

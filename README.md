@@ -786,7 +786,7 @@ On the web, it is conventional for the mouse pointer to turn into a "gloved hand
 
 Therefore, we want a gloved-hand pointer to appear when the mouse hovers over the lights (since the lights are clickable).
 
-To accomplish this feats, add `cursor: pointer;` to the `light` class in `style.css`:
+To accomplish this feat, add `cursor: pointer;` to the `light` class in `style.css`:
 
 ```css
 .row {

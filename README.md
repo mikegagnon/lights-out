@@ -873,6 +873,18 @@ you needed to make this modification.
 ## Hints
 
 - [Hint 1](#c2h1)
+- [Hint 2](#c2h2)
+- [Hint 3](#c2h3)
+- [Hint 4](#c2h4)
+- [Hint 5](#c2h5)
+- [Hint 6](#c2h6)
+- [Hint 7](#c2h7)
+- [Hint 8](#c2h8)
+- [Solution](#c2solution)
+- [Explanation of why you need to move the line `<script src="lights-out.js"></script>` in `index.html`](#c2explanation)
+- [See result](https://mikegagnon.github.io/lights-out/challenge02/index.html)
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

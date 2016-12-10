@@ -1040,7 +1040,31 @@ See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights
 
 ## <a name="c2explanation">Challenge 2, explanation for moving `<script src="lights-out.js"></script>`</a>
 
-TODO
+When your browser loads an html page, it executes each `<script>` tag as soon as it reads it.
+
+In our case we have the following code in `lights-out.js`:
+
+```js
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+
+        matrix[row][col]  = Math.random() < 0.5;
+        
+        setLightColor(row, col);
+    }
+}
+```
+
+If the above code is executed before the light `<div>` elements are rendered by the browser,
+then the `setLightColor(...)` function won't work.
+
+This is because `setLightColor(...)` attempts to update `<div>` elements that haven't been rendered yet.
+
+To get around this, put the `<script src="lights-out.js"></script>` line after all the 
+light `<div>` elements have been rendered.
+
+That way, when `lights-out.js` executes, it can update the `<div>` elements because
+they have already been rendered.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

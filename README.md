@@ -811,7 +811,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture05/example04.htm
 
 # PART 3. CODING CHALLENGES
 
-# Challenge 1. Toggle lights
+# <a name="c1">Challenge 1. Toggle lights</a>
 
 At this point, we have developed the Lights Out game to the point where if you click
 a light, the light turns pink.
@@ -879,6 +879,8 @@ you needed to make this modification
 
 Use a 2-dimensional array (aka a *matrix*) to keep track of which lights are turned on, and which
 lights are turned off.
+
+[Back to Challenge 1](#c1)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

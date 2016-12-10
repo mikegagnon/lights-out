@@ -835,7 +835,7 @@ googling it, and (c) you've asked your instructor for help.
 - [Solution](#c1solution)
 - [See result](https://mikegagnon.github.io/lights-out/challenge01/index.html)
 
-# Challenge 2. Randomize lights
+# <a name="c2">Challenge 2. Randomize lights</a>
 
 In this challenge add/update some code in `lights-out.js` so
 that the game will start with lights randomly turned on/off.
@@ -871,6 +871,9 @@ After you've solved the challenge, read [this explanation](#c2explanation) which
 you needed to make this modification
 
 ## Hints
+
+- [Hint 1](#c2h1)
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # PART 4. HINTS
@@ -1024,3 +1027,107 @@ See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## <a name="c2explanation">Challenge 2, explanation for moving `<script src="lights-out.js"></script>`</a>
+
+TODO
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h1">Challenge 2, Hint 1</a>
+
+Write a `for` loop that iterates over each row number.
+
+Inside that `for` loop, write a second `for` loop that iterates over each column number.
+
+Then, inside the inner `for` loop, randomly set the light at (row, column) to either on or off, randomly.
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h2">Challenge 2, Hint 2</a>
+
+The nested `for` loops should look like this:
+
+```js
+
+var numRows = 4
+var numCols = 4
+
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+      
+      // set the light at (row, col) to either pink or gray, randomly
+      
+    }
+}
+
+```
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h3">Challenge 2, Hint 3</a>
+
+The `Math.random()` function returns a random value between 0 and 1
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h4">Challenge 2, Hint 4</a>
+
+`Math.random() < 0.5` is true 50% of the time, and false 50% of the time
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h5">Challenge 2, Hint 5</a>
+
+```js
+matrix[row][col] = Math.random() < 0.5;
+```
+
+The above code sets `matrix[row][col]` to either `true` or `false`, randomly.
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h6">Challenge 2, Hint 6</a>
+
+Inside the inner `for` loop,
+don't forget to update the appropriate light `<div>` with either pink or gray, depending on the value of
+`matrix[row][col]`.
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h7">Challenge 2, Hint 7</a>
+
+Your code should look like this:
+
+```js
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+
+        matrix[row][col] = Math.random() < 0.5;
+
+        var color;
+
+        if (matrix[row][col]) {
+            color = "pink"
+        } else {
+            color = "gray"
+        }
+
+        var lightId = "#light-" + row + "-" + col;
+
+        $(lightId).css("background-color", color)
+    }
+}
+```
+
+[Back to Challenge 2](#c2)

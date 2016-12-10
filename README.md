@@ -841,7 +841,7 @@ In this challenge add/update some code in `lights-out.js` so
 that the game will start with lights randomly turned on/off.
 
 This is [what the game will be like](https://mikegagnon.github.io/lights-out/challenge02/index.html) by the time
-you finish this challenge.
+you finish this challenge. Notice that every time you refresh the page the lights are different.
 
 ## Start off by modifying `index.html`
 

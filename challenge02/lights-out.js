@@ -17,19 +17,19 @@ for (var row = 0; row < numRows; row++) {
     }
 }
 
-function getLightId(row, col) {
-    return "#light-" + row + "-" + col
-}
-
 function setLightColor(row, col) {
 
-    var lightId = getLightId(row, col)
+    var color;
 
-    if (matrix[row][col] ) {
-        $(lightId).css("background-color", "pink")
+    if (matrix[row][col]) {
+        color = "pink"
     } else {
-        $(lightId).css("background-color", "gray")
+        color = "gray"
     }
+
+    var lightId = "#light-" + row + "-" + col;
+
+    $(lightId).css("background-color", color)
 }
 
 function lightClick(row, col) {

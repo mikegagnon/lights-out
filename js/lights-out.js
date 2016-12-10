@@ -24,13 +24,17 @@ function getLightId(row, col) {
 
 function setLightColor(row, col) {
 
-    var lightId = getLightId(row, col)
+    var color;
 
-    if (matrix[row][col] ) {
-        $(lightId).css("background-color", "pink")
+    if (matrix[row][col]) {
+        color = "pink"
     } else {
-        $(lightId).css("background-color", "gray")
+        color = "gray"
     }
+
+    var lightId = getLightId(row, col);
+
+    $(lightId).css("background-color", color)
 }
 
 for (var row = 0; row < numRows; row++) {

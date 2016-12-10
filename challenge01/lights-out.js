@@ -17,7 +17,7 @@ function lightClick(row, col) {
         color = "gray"
     }
 
-    var lightId = "light-" + row + "-" + col;
+    var lightId = "#light-" + row + "-" + col;
 
-    $("#" + lightId).css("background-color", color)
+    $(lightId).css("background-color", color)
 }

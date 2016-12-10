@@ -896,6 +896,24 @@ When a victory occurs create a popup that says "You win!"
 - [Solution](#c3solution)
 - [See result](https://mikegagnon.github.io/lights-out/challenge03/index.html)
 
+# <a name="c4">Challenge 4. Cross pattern</a>
+
+Add code to `lights-out.js` so that clicking on a light toggles the lights in a cross pattern.
+
+To refresh your memory on the cross pattern [play the game](https://mikegagnon.github.io/lights-out/).
+
+When a light is clicked, the following lights should be toggled:
+
+- The light that was clicked
+- The light above
+- The light below
+- The light to the left
+- The light to the right
+
+If there is no light above (because the clicked light is on the top row), then it wraps around
+and the light on the bottom row is toggled. So on and so forth for going below, to the left, and to the right.
+
+- [Hint 1](#c4h1)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -1328,3 +1346,13 @@ function lightClick(row, col) {
 ```
 
 [Back to Challenge 3](#c3)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h1">Challenge 4, Hint 1</a>
+
+You need to get the (row, col) values for each light to be toggled.
+
+To handle wrapping around the edges of the board, you'll need to do something like:
+
+[Back to Challenge 4](#c4)

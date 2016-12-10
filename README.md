@@ -867,7 +867,7 @@ place it at the bottom of `index.html` just above the `</html>` tag, like this:
 </html>
 ```
 
-After you've solved the challenge , read [this explanation](#c2explanation) which explains why
+After you've solved the challenge, read [this explanation](#c2explanation) which explains why
 you needed to make this modification
 
 ## Hints

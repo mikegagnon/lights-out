@@ -884,7 +884,7 @@ you needed to make this modification.
 - [Explanation of why you need to move the line `<script src="lights-out.js"></script>` in `index.html`](#c2explanation)
 - [See result](https://mikegagnon.github.io/lights-out/challenge02/index.html)
 
-# <a name="c2">Challenge 3. Detect victory</a>
+# <a name="c3">Challenge 3. Detect victory</a>
 
 Add code to `lights-out.js` that detects victories -- i.e. when all the lights have been turned to gray.
 

@@ -884,6 +884,17 @@ you needed to make this modification.
 - [Explanation of why you need to move the line `<script src="lights-out.js"></script>` in `index.html`](#c2explanation)
 - [See result](https://mikegagnon.github.io/lights-out/challenge02/index.html)
 
+# <a name="c3">Challenge 3. Detect victory</a>
+
+Add code to `lights-out.js` that detects victories -- i.e. when all the lights have been turned to gray.
+
+When a victory occurs create a popup that says "You win!"
+
+- [Hint 1](#c3h1)
+- [Hint 2](#c3h2)
+- [Hint 3](#c3h3)
+- [Solution](#c3solution)
+- [See result](https://mikegagnon.github.io/lights-out/challenge03/index.html)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -1249,3 +1260,71 @@ function lightClick(row, col) {
 ```
 
 [Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c3h1">Challenge 3, Hint 1</a>
+
+You should check for a victory every time a light is clicked.
+
+[Back to Challenge 3](#c3)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c3h2">Challenge 3, Hint 2</a>
+
+To check for a victory every time a light is clicked, update the `lightClick(...)` function
+with code that checks for a victory.
+
+[Back to Challenge 3](#c3)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c3h3">Challenge 3, Hint 3</a>
+
+Write nested `for` loops that iterate over every row and column.
+
+If any light is turned on, then a victory has not occured.
+
+[Back to Challenge 3](#c3)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c3solution">Challenge 3, Solution</a>
+
+Here is a function that returns true if, and only if, there is a victory:
+
+```js
+function checkWin() {
+
+    var anyLightOn = false;
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            if (matrix[row][col]) {
+                anyLightOn = true;
+            } 
+        }
+    }
+
+    return !anyLightOn;
+
+}
+```
+
+Then modify the `lightClick(...)` function to check for victory:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col];
+
+    setLightColor(row, col);
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+[Back to Challenge 3](#c3)

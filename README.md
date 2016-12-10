@@ -1009,4 +1009,4 @@ See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## <a name="c2explantion">Challenge 2, explanation for moving `<script src="lights-out.js"></script>`</a>
+## <a name="c2explanation">Challenge 2, explanation for moving `<script src="lights-out.js"></script>`</a>

@@ -1353,7 +1353,7 @@ function lightClick(row, col) {
 
 You need to get the (row, col) values for each light to be toggled.
 
-Write four function:
+Write four functions:
 
 - `above(row)`
 - `below(row)`

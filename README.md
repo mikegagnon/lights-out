@@ -1066,6 +1066,9 @@ light `<div>` elements have been rendered.
 That way, when `lights-out.js` executes, it can update the `<div>` elements because
 they have already been rendered.
 
+[Back to Challenge 2](#c2)
+
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## <a name="c2h1">Challenge 2, Hint 1</a>

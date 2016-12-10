@@ -19,7 +19,7 @@ var solution = [
 var showSolution = false
 
 function getLightId(row, col) {
-    return "light-" + row + "-" + col
+    return "#light-" + row + "-" + col
 }
 
 for (var row = 0; row < numRows; row++) {
@@ -31,9 +31,9 @@ for (var row = 0; row < numRows; row++) {
         var lightId = getLightId(row, col)
 
         if (lightStatus) {
-            $("#" + lightId).css("background-color", "pink")
+            $(lightId).css("background-color", "pink")
         } else {
-            $("#" + lightId).css("background-color", "gray")
+            $(lightId).css("background-color", "gray")
         }
 
     }
@@ -83,9 +83,9 @@ function lightSwitch(row, col) {
     var lightId = getLightId(row, col)
 
     if (lightStatus) {
-        $("#" + lightId).css("background-color", "pink")
+        $(lightId).css("background-color", "pink")
     } else {
-        $("#" + lightId).css("background-color", "gray")
+        $(lightId).css("background-color", "gray")
     }
 
 }
@@ -157,9 +157,9 @@ function solve() {
             var lightId = getLightId(row, col)
 
             if (solution[row][col]) {
-                $("#" + lightId).text("click me")
+                $(lightId).text("click me")
             } else {
-                $("#" + lightId).text("")
+                $(lightId).text("")
             }
         }
     }
@@ -170,7 +170,7 @@ function hideSolution() {
     for (var row = 0; row < numRows; row++) {
         for (var col = 0; col < numCols; col++) {
             var lightId = getLightId(row, col)
-            $("#" + lightId).text("")
+            $(lightId).text("")
         }
     }
 }

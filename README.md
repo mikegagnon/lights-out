@@ -1220,3 +1220,5 @@ function lightClick(row, col) {
     setLightColor(row, col);
 }
 ```
+
+[Back to Challenge 2](#c2)

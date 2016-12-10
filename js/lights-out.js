@@ -89,7 +89,7 @@ function lightSwitch(row, col) {
 
 function checkWin() {
 
-    var anyLightOn = false
+    var anyLightOn = false;
 
     for (var row = 0; row < numRows; row++) {
         for (var col = 0; col < numCols; col++) {

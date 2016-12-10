@@ -2,7 +2,7 @@
 
 > "A little knowledge is a dangerous thing." — Alexander Pope
 
-Let's make a game called Lights Out, while learning the bare essentials of JS + HTML + CSS.
+Let's make a game called Lights Out, while getting the flavor of JS + HTML + CSS.
 I assume you’ve already taken [Codecademy’s JavaScript course](https://www.codecademy.com/learn/javascript).
 
 These lecture notes are just notes; they are intended to be accompanied with in-person instruction.

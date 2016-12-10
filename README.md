@@ -1353,6 +1353,22 @@ function lightClick(row, col) {
 
 You need to get the (row, col) values for each light to be toggled.
 
-To handle wrapping around the edges of the board, you'll need to do something like:
+Write four function:
+
+- `above(row)`
+- `below(row)`
+- `left(col)`
+- `right(col)`
+
+`above(row)` should return the `row` above the given `row`.
+
+For example:
+
+- `above(3) == 2`
+- `above(2) == 1`
+- `above(1) == 0`
+- `above(0) == 3`
+
+Then you can toggle (`above(row)`, `col`), and so on for `below`, `left`, and `right`.
 
 [Back to Challenge 4](#c4)

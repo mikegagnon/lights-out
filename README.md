@@ -1131,3 +1131,80 @@ for (var row = 0; row < numRows; row++) {
 ```
 
 [Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2h8">Challenge 2, Hint 8</a>
+
+Notice that there is code duplication in the solution so far.
+
+Namely, the following code appears in both the nested `for` loops, as well as in
+the `lightClick` function.
+
+```js
+var color;
+
+if (matrix[row][col]) {
+    color = "pink"
+} else {
+    color = "gray"
+}
+
+var lightId = "#light-" + row + "-" + col;
+
+$(lightId).css("background-color", color)
+```
+
+You want to avoid code duplication by hoisting the common code into its own function,
+then calling that function where the code duplication used to be.
+
+[Back to Challenge 2](#c2)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2solution">Challenge 2, Solution</a>
+
+Your `lights-out.js` file should look like this:
+
+```js
+var numRows = 4
+var numCols = 4
+
+var matrix = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
+]
+
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+
+        matrix[row][col]  = Math.random() < 0.5;
+        
+        setLightColor(row, col);
+    }
+}
+
+function setLightColor(row, col) {
+
+    var color;
+
+    if (matrix[row][col]) {
+        color = "pink"
+    } else {
+        color = "gray"
+    }
+
+    var lightId = "#light-" + row + "-" + col;
+
+    $(lightId).css("background-color", color)
+}
+
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col];
+
+    setLightColor(row, col);
+}
+```

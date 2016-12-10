@@ -765,16 +765,16 @@ Edit `lights-out.js`:
 
 ```js
 function lightClick(row, col) {
-    var lightId = "light-" + row + "-" + col;
-    $("#" + lightId).css("background-color", "pink")
+    var lightId = "#light-" + row + "-" + col;
+    $(lightId).css("background-color", "pink")
 }
 ```
 
 Here's how it works:
 
 - `$` is a reference to the jQuery object
-- `$("#" + lightId)` is a method invocation that "selects" the div for the light at `row`, `col`, and returns an object representing the selected `<div>` element
-- `.css` is a method on the object returned by `$("#" + lightId)`. It changes the CSS for the selected `<div>`
+- `$(lightId)` is a method invocation that "selects" the div for the light at `row`, `col`, and returns an object representing the selected `<div>` element
+- `.css` is a method on the object returned by `$(lightId)`. It changes the CSS for the selected `<div>`
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example03.html).
 
@@ -906,9 +906,9 @@ function lightClick(row, col) {
         color = "gray"
     }
 
-    var lightId = "light-" + row + "-" + col;
+    var lightId = "#light-" + row + "-" + col;
 
-    $("#" + lightId).css("background-color", color)
+    $(lightId).css("background-color", color)
 }
 ```
 
@@ -929,6 +929,8 @@ var matrix = [
 ]
 ```
 
+See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights-out.js).
+
 ### Part 2
 
 Toggle lights in the matrix like this in `lights-out.js`:
@@ -941,6 +943,8 @@ function lightClick(row, col) {
     ...
  }
 ```
+
+See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights-out.js).
 
 ### Part 3
 
@@ -959,8 +963,11 @@ function lightClick(row, col) {
         color = "gray"
     }
 
-    var lightId = "light-" + row + "-" + col;
+    var lightId = "#light-" + row + "-" + col;
 
-    $("#" + lightId).css("background-color", color)
+    $(lightId).css("background-color", color)
 }
 ```
+
+See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights-out.js).
+

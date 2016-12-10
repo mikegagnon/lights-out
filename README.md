@@ -897,11 +897,15 @@ var matrix = [
 ]
 ```
 
+[Back to Challenge 1](#c1)
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## <a name="c1h3">Challenge 1, Hint 3</a>
 
 Whenever a light is clicked, toggle the corresponding boolean value in the matrix
+
+[Back to Challenge 1](#c1)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -917,6 +921,9 @@ function lightClick(row, col) {
     ...
  }
 ```
+
+[Back to Challenge 1](#c1)
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -949,6 +956,9 @@ function lightClick(row, col) {
     $(lightId).css("background-color", color)
 }
 ```
+
+[Back to Challenge 1](#c1)
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -1008,6 +1018,8 @@ function lightClick(row, col) {
 ```
 
 See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights-out.js).
+
+[Back to Challenge 1](#c1)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

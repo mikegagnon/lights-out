@@ -835,6 +835,42 @@ googling it, and (c) you've asked your instructor for help.
 - [Solution](#c1solution)
 - [See result](https://mikegagnon.github.io/lights-out/challenge01/index.html)
 
+# Challenge 2. Randomize lights
+
+In this challenge add/update some code in `lights-out.js` so
+that the game will start with lights randomly turned on/off.
+
+This is [what the game will be like](https://mikegagnon.github.io/lights-out/challenge02/index.html) by the time
+you finish this challenge.
+
+## Start off by modifying `index.html`
+
+Right now the `<head>` of `index.html` looks like this:
+
+```html
+  <head>
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lights-out.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+```
+
+Remove the line `<script src="lights-out.js"></script>` and
+place it at the bottom of `index.html` just above the `</html>` tag, like this:
+
+```html
+  </body>
+
+  <script src="lights-out.js"></script>
+
+</html>
+```
+
+After you've solved the challenge , read [this explanation](#c2explanation) which explains why
+you needed to make this modification
+
+## Hints
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # PART 4. HINTS
@@ -971,3 +1007,6 @@ function lightClick(row, col) {
 
 See [`lights-out.js`](https://mikegagnon.github.io/lights-out/challenge01/lights-out.js).
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c2explantion">Challenge 2, explanation for moving `<script src="lights-out.js"></script>`</a>

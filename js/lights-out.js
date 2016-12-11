@@ -83,8 +83,8 @@ function right(col) {
 }
 
 function lightSwitch(row, col) {
-    matrix[row][col] = !matrix[row][col]
-    setLightColor(row, col)
+    matrix[row][col] = !matrix[row][col];
+    setLightColor(row, col);
 }
 
 function checkWin() {

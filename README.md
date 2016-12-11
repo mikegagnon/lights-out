@@ -10,9 +10,17 @@ These lecture notes are just notes; they are intended to be accompanied with in-
 My approach in these lectures is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: your first task is to [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
 
-# PART 1. HTML and CSS
+## Contents
 
-# Lecture 1. Intro to HTML
+- [PART 1. HTML and CSS](#part1)
+  - [Lecture 1. Intro to HTML](#lec1)
+  - [Lecture 2. Intro to CSS](#lec2)
+  - [Lecture 3. The \<div> tag](#lec3)
+  - [Lecture 4. HTML & CSS framework for Lights Out](#lec4)
+
+# <a name="part1">PART 1. HTML and CSS</a>
+
+# <a name="lec1">Lecture 1. Intro to HTML</a>
 
 HTML is a "markup" language — which means you markup plain text with HTML tags.
 
@@ -79,7 +87,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.htm
 - The `<title>` tag may only appear inside the `<head>` tag. The text inside the `<title>` tag is displayed on the tab in your browser.
 - The `<body>` tag stores everything that should be displayed
 
-# Lecture 2. Intro to CSS
+# <a name="lec2">Lecture 2. Intro to CSS</a>
 
 CSS lets you *style* HTML.
 
@@ -149,7 +157,7 @@ The `<li class="...">` tags attach CSS classes to HTML tags.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example02.html).
 
-# Lecture 3. The \<div> tag
+# <a name="lec3">Lecture 3. The \<div> tag</a>
 
 The `<div>` tag is a special HTML tag.
 
@@ -395,7 +403,7 @@ Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example08.html).
 
-# Lecture 4
+# <a name="lec4">Lecture 4. HTML & CSS framework for Lights Out</a>
 
 In this lecture, we'll create the HTML and CSS framework for the Lights Out game,
 using the things we've learned from the previous lectures.

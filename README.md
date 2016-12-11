@@ -920,6 +920,12 @@ and the light on the bottom row is toggled. So on and so forth for going below, 
 - [Solution](#c4solution)
 - [See result](https://mikegagnon.github.io/lights-out/challenge04/index.html)
 
+# <a name="c5">Challenge 5. The Solver</a>
+
+Add code to `lights-out.js` so that the game tells the user which buttons to click to solve the puzzle,
+[like this](https://mikegagnon.github.io/lights-out/challenge05/index.html)
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

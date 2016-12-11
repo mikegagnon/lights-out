@@ -1552,6 +1552,8 @@ function lightClick(row, col) {
 
 ## <a name="c5h1">Challenge 5, Hint 1</a>
 
+Before coding a solver for Lights Out, we need to figure out how to solve the game as a player.
+
 While playing the Lights Out game, can you figure out a pattern of clicks that will turn off exactly one light
 without affecting any of the other lights in the game?
 

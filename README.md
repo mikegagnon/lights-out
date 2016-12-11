@@ -1372,3 +1372,163 @@ For example:
 Then you can toggle (`above(row)`, `col`), and so on for `below`, `left`, and `right`.
 
 [Back to Challenge 4](#c4)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h2">Challenge 4, Hint 2</a>
+
+Here are the `above`, `below`, `left`, `right` functions:
+
+```js
+function above(row) {
+    if (row == 0) {
+        return numRows -1
+    } else {
+        return row - 1
+    }
+}
+
+function below(row) {
+    if (row == numRows - 1) {
+        return 0
+    } else {
+        return row + 1
+    }
+}
+
+function left(col) {
+    if (col == 0) {
+        return numCols -1
+    } else {
+        return col - 1
+    }
+}
+
+function right(col) {
+    if (col == numCols - 1) {
+        return 0
+    } else {
+        return col + 1
+    }
+}
+```
+
+[Back to Challenge 4](#c4)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h3">Challenge 4, Hint 3</a>
+
+Update `lightClick(...)` to toggle each of the five lights in the cross pattern.
+
+Here is some psuedocode:
+
+```js
+function lightClick(row, col) {
+
+    // toggle the light at (row, col)
+    // toggle the light at (above(row), col)
+    // toggle the light at (below(row), col)
+    // toggle the light at (row, left(col))
+    // toggle the light at (row, right(col))
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+[Back to Challenge 4](#c4)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h4">Challenge 4, Hint 4</a>
+
+You may have written code like this:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col];
+    setLightColor(row, col);
+    
+    matrix[above(row)][col] = !matrix[above(row)][col];
+    setLightColor(above(row), col);
+    
+    matrix[below(row)][col] = !matrix[below(row)][col];
+    setLightColor(below(row), col);
+    
+    ...
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+That code can improved since it has a lot of code duplication.
+
+Can you rewrite your code to be more concise and elgant?
+
+[Back to Challenge 4](#c4)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4solution">Challenge 4, Solution</a>
+
+Add the following code to `lights-out.js`
+
+```js
+function above(row) {
+    if (row == 0) {
+        return numRows -1
+    } else {
+        return row - 1
+    }
+}
+
+function below(row) {
+    if (row == numRows - 1) {
+        return 0
+    } else {
+        return row + 1
+    }
+}
+
+function left(col) {
+    if (col == 0) {
+        return numCols -1
+    } else {
+        return col - 1
+    }
+}
+
+function right(col) {
+    if (col == numCols - 1) {
+        return 0
+    } else {
+        return col + 1
+    }
+}
+
+function lightSwitch(row, col) {
+    matrix[row][col] = !matrix[row][col];
+    setLightColor(row, col);
+}
+
+function lightClick(row, col) {
+
+    lightSwitch(row, col)
+    lightSwitch(above(row), col)
+    lightSwitch(below(row), col)
+    lightSwitch(row, left(col))
+    lightSwitch(row, right(col))
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+
+```

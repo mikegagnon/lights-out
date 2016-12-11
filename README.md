@@ -896,6 +896,30 @@ When a victory occurs create a popup that says "You win!"
 - [Solution](#c3solution)
 - [See result](https://mikegagnon.github.io/lights-out/challenge03/index.html)
 
+# <a name="c4">Challenge 4. Cross pattern</a>
+
+Add code to `lights-out.js` so that clicking on a light toggles the lights in a cross pattern.
+
+To refresh your memory on the cross pattern [play the game](https://mikegagnon.github.io/lights-out/).
+
+When a light is clicked, the following lights should be toggled:
+
+- The light that was clicked
+- The light above
+- The light below
+- The light to the left
+- The light to the right
+
+If there is no light above (because the clicked light is on the top row), then it wraps around
+and the light on the bottom row is toggled. So on and so forth for going below, to the left, and to the right.
+
+- [Hint 1](#c4h1)
+- [Hint 2](#c4h2)
+- [Hint 3](#c4h3)
+- [Hint 4](#c4h4)
+- [Solution](#c4solution)
+- [See result](https://mikegagnon.github.io/lights-out/challenge04/index.html)
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -1328,3 +1352,191 @@ function lightClick(row, col) {
 ```
 
 [Back to Challenge 3](#c3)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h1">Challenge 4, Hint 1</a>
+
+You need to get the (row, col) values for each light to be toggled.
+
+Write four functions:
+
+- `above(row)`
+- `below(row)`
+- `left(col)`
+- `right(col)`
+
+`above(row)` should return the `row` above the given `row`.
+
+For example:
+
+- `above(3) == 2`
+- `above(2) == 1`
+- `above(1) == 0`
+- `above(0) == 3`
+
+Then you can toggle (`above(row)`, `col`), and so on for `below`, `left`, and `right`.
+
+[Back to Challenge 4](#c4)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h2">Challenge 4, Hint 2</a>
+
+Here are the `above`, `below`, `left`, `right` functions:
+
+```js
+function above(row) {
+    if (row == 0) {
+        return numRows -1
+    } else {
+        return row - 1
+    }
+}
+
+function below(row) {
+    if (row == numRows - 1) {
+        return 0
+    } else {
+        return row + 1
+    }
+}
+
+function left(col) {
+    if (col == 0) {
+        return numCols -1
+    } else {
+        return col - 1
+    }
+}
+
+function right(col) {
+    if (col == numCols - 1) {
+        return 0
+    } else {
+        return col + 1
+    }
+}
+```
+
+[Back to Challenge 4](#c4)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h3">Challenge 4, Hint 3</a>
+
+Update `lightClick(...)` to toggle each of the five lights in the cross pattern.
+
+Here is some psuedocode:
+
+```js
+function lightClick(row, col) {
+
+    // toggle the light at (row, col)
+    // toggle the light at (above(row), col)
+    // toggle the light at (below(row), col)
+    // toggle the light at (row, left(col))
+    // toggle the light at (row, right(col))
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+[Back to Challenge 4](#c4)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4h4">Challenge 4, Hint 4</a>
+
+You may have written code like this:
+
+```js
+function lightClick(row, col) {
+
+    matrix[row][col] = !matrix[row][col];
+    setLightColor(row, col);
+    
+    matrix[above(row)][col] = !matrix[above(row)][col];
+    setLightColor(above(row), col);
+    
+    matrix[below(row)][col] = !matrix[below(row)][col];
+    setLightColor(below(row), col);
+    
+    ...
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+That code can improved since it has a lot of code duplication.
+
+Can you rewrite your code to be more concise and elegant?
+
+[Back to Challenge 4](#c4)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c4solution">Challenge 4, Solution</a>
+
+Add the following code to `lights-out.js`
+
+```js
+function above(row) {
+    if (row == 0) {
+        return numRows -1
+    } else {
+        return row - 1
+    }
+}
+
+function below(row) {
+    if (row == numRows - 1) {
+        return 0
+    } else {
+        return row + 1
+    }
+}
+
+function left(col) {
+    if (col == 0) {
+        return numCols -1
+    } else {
+        return col - 1
+    }
+}
+
+function right(col) {
+    if (col == numCols - 1) {
+        return 0
+    } else {
+        return col + 1
+    }
+}
+
+function lightSwitch(row, col) {
+    matrix[row][col] = !matrix[row][col];
+    setLightColor(row, col);
+}
+
+function lightClick(row, col) {
+
+    lightSwitch(row, col)
+    lightSwitch(above(row), col)
+    lightSwitch(below(row), col)
+    lightSwitch(row, left(col))
+    lightSwitch(row, right(col))
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+
+```
+
+[Back to Challenge 4](#c4)

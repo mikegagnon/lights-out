@@ -1559,3 +1559,22 @@ without affecting any of the other lights in the game?
 
 If you can figure out such a pattern, then you can turn off all the lights in the game by applying that
 pattern to every light that is turned on.
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h2">Challenge 5, Hint 2</a>
+
+The cross pattern is the answer.
+
+To turn off exactly one light, click the cross pattern.
+
+For example:
+
+![Solution 1](solution1.png)
+
+Clicking in the five places it says "click me" will turn the light off, without affecting
+any other lights.
+
+[Try it out](https://mikegagnon.github.io/lights-out/).

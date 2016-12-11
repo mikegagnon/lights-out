@@ -1582,3 +1582,19 @@ any other lights.
 The cross pattern wraps around the edges.
 
 [Try it out](https://mikegagnon.github.io/lights-out/).
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h3">Challenge 5, Hint 3</a>
+
+Here's the algorithm you need to use to solve the puzzle:
+
+- For every light that is turned on, simulate a click on that light.
+- Keep track (in a 4x4 matrix) how many simulated clicks each light received
+- If a light is clicked (simulated) an even number of times, then it is as if the light never needs to be clicked in the solution
+- If a light is clicked (simulated) an odd number of times, then it is as if the light needs to be clicked exactly once
+
+
+[Back to Challenge 5](#c5)

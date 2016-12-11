@@ -923,8 +923,9 @@ and the light on the bottom row is toggled. So on and so forth for going below, 
 # <a name="c5">Challenge 5. The Solver</a>
 
 Add code to `lights-out.js` so that the game tells the user which buttons to click to solve the puzzle,
-[like this](https://mikegagnon.github.io/lights-out/challenge05/index.html)
+[like this](https://mikegagnon.github.io/lights-out/challenge05/index.html).
 
+- [Hint 1](#c5h1)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -1546,3 +1547,13 @@ function lightClick(row, col) {
 ```
 
 [Back to Challenge 4](#c4)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h1">Challenge 5, Hint 1</a>
+
+While playing the Lights Out game, can you figure out a pattern of clicks that will turn off exactly one light
+without affecting any of the other lights in the game?
+
+If you can figure out such a pattern, then you can turn off all the lights in the game by applying that
+pattern to every light that is turned on.

@@ -9,13 +9,6 @@ var matrix = [
     [undefined, undefined, undefined, undefined]
 ]
 
-var solution = [
-    [undefined, undefined, undefined, undefined],
-    [undefined, undefined, undefined, undefined],
-    [undefined, undefined, undefined, undefined],
-    [undefined, undefined, undefined, undefined]
-]
-
 var showSolution = false
 
 function getLightId(row, col) {

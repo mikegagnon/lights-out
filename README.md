@@ -1476,7 +1476,7 @@ function lightClick(row, col) {
 
 That code can improved since it has a lot of code duplication.
 
-Can you rewrite your code to be more concise and elgant?
+Can you rewrite your code to be more concise and elegant?
 
 [Back to Challenge 4](#c4)
 

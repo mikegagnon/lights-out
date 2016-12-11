@@ -1572,12 +1572,12 @@ To turn off exactly one light, click the cross pattern.
 
 For example:
 
-![Solution 1](solution1.png)
+<img src="solution1.png" width=400>
 
 Clicking in the five places it says "click me" will turn the light off, without affecting
 any other lights.
 
-![Solution 2](solution2.png)
+<img src="solution2.png" width=400>
 
 The cross pattern wraps around the edges.
 

@@ -17,7 +17,15 @@ to keep your head above water. In that spirit: your first task is to [learn the 
   - [Lecture 2. Intro to CSS](#lec2)
   - [Lecture 3. The \<div> tag](#lec3)
   - [Lecture 4. HTML & CSS framework for Lights Out](#lec4)
-
+- [PART 2. JAVASCRIPT](#part2)
+  - [Lecture 5. Interaction](#lec5)
+- [Part 3. CODING CHALLENGES](#part3)
+  - [Challenge 1. Toggle lights](#c1)
+  - [Challenge 2. Randomize lights](#c2)
+  - [Challenge 3. Detect victory](#c3)
+  - [Challenge 4. Cross pattern](#c4)
+  - [Challenge 5. The Solver](#c5)
+  
 # <a name="part1">PART 1. HTML and CSS</a>
 
 # <a name="lec1">Lecture 1. Intro to HTML</a>
@@ -562,9 +570,9 @@ Just use the same `index.html` file from [Lecture 4, Step 2](#lec4ex2).
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture04/example03.html).
 
-# PART 2. Javascript
+# <a name="part2">PART 2. JAVASCRIPT</a>
 
-# Lecture 5
+# <a name="lec5">Lecture 5. Interaction</a>
 
 This lecture introduces how Javascript can interact with HTML and CSS.
 
@@ -817,7 +825,7 @@ To accomplish this feat, add `cursor: pointer;` to the `light` class in `style.c
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example04.html).
 
-# PART 3. CODING CHALLENGES
+# <a name="part3">PART 3. CODING CHALLENGES</a>
 
 # <a name="c1">Challenge 1. Toggle lights</a>
 

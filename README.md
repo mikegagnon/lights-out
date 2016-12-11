@@ -1577,4 +1577,8 @@ For example:
 Clicking in the five places it says "click me" will turn the light off, without affecting
 any other lights.
 
+![Solution 2](solution2.png)
+
+The cross pattern wraps around the edges.
+
 [Try it out](https://mikegagnon.github.io/lights-out/).

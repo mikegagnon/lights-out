@@ -914,6 +914,12 @@ If there is no light above (because the clicked light is on the top row), then i
 and the light on the bottom row is toggled. So on and so forth for going below, to the left, and to the right.
 
 - [Hint 1](#c4h1)
+- [Hint 2](#c4h2)
+- [Hint 3](#c4h3)
+- [Hint 4](#c4h4)
+- [Solution](#c4solution)
+- [See result](https://mikegagnon.github.io/lights-out/challenge04/index.html)
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

@@ -1538,3 +1538,5 @@ function lightClick(row, col) {
 }
 
 ```
+
+[Back to Challenge 4](#c4)

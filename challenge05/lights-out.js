@@ -107,15 +107,6 @@ function lightClick(row, col) {
     }
 }
 
-
-function solutionClick(numClicks, row, col) {
-    numClicks[row][col] += 1
-    numClicks[above(row)][col] += 1
-    numClicks[below(row)][col] += 1
-    numClicks[row][left(col)] += 1
-    numClicks[row][right(col)] += 1
-}
-
 function solve() {
 
     var numClicks = [
@@ -128,7 +119,13 @@ function solve() {
     for (var row = 0; row < numRows; row++) {
         for (var col = 0; col < numCols; col++) {
             if (matrix[row][col]) {
-                solutionClick(numClicks, row, col)
+
+                numClicks[row][col] += 1
+                numClicks[above(row)][col] += 1
+                numClicks[below(row)][col] += 1
+                numClicks[row][left(col)] += 1
+                numClicks[row][right(col)] += 1
+
             }
         }
     }

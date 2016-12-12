@@ -941,7 +941,32 @@ and the light on the bottom row is toggled. So on and so forth for going below, 
 Add code to `lights-out.js` so that the game tells the user which buttons to click to solve the puzzle,
 [like this](https://mikegagnon.github.io/lights-out/challenge05/index.html).
 
+## Setting \<div> text
+
+For this challenge you need to change the text inside of of a `<div>` to say either "click me" or say
+nothing at all, "".
+
+Use jQuery for this, specifically use `$(lightId).text("foo")`
+
+For example:
+
+```js
+var row = 2
+var col = 1
+lightId = "#light-" + row + "-" + col;
+$(lightId).text("click me")
+
+var row = 0
+var col = 0
+lightId = "#light-" + row + "-" + col;
+$(lightId).text("")
+```
+
 - [Hint 1](#c5h1)
+- [Hint 2](#c5h1)
+- [Hint 3](#c5h1)
+- [Hint 4](#c5h1)
+- [Solution](#c5solution)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -1648,5 +1673,11 @@ for each row:
     else:
       set text for the light to ""
 ```
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5solution">Challenge 5, Solution</a>
 
 [Back to Challenge 5](#c5)

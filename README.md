@@ -963,9 +963,9 @@ $(lightId).text("")
 ```
 
 - [Hint 1](#c5h1)
-- [Hint 2](#c5h1)
-- [Hint 3](#c5h1)
-- [Hint 4](#c5h1)
+- [Hint 2](#c5h2)
+- [Hint 3](#c5h3)
+- [Hint 4](#c5h4)
 - [Solution](#c5solution)
 
 

@@ -966,7 +966,8 @@ $(lightId).text("")
 - [Hint 2](#c5h2)
 - [Hint 3](#c5h3)
 - [Hint 4](#c5h4)
-- [Solution](#c5solution)
+- [Final solution](#c5solution)
+- [See final result](https://mikegagnon.github.io/lights-out/challenge05/index.html)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

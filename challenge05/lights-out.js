@@ -107,31 +107,28 @@ function lightClick(row, col) {
     }
 }
 
-function solutionSwitch(row, col) {
-    solution[row][col] = !solution[row][col]
-}
 
-function solutionClick(row, col) {
-    solutionSwitch(row, col)
-    solutionSwitch(above(row), col)
-    solutionSwitch(below(row), col)
-    solutionSwitch(row, left(col))
-    solutionSwitch(row, right(col))
+function solutionClick(numClicks, row, col) {
+    numClicks[row][col] += 1
+    numClicks[above(row)][col] += 1
+    numClicks[below(row)][col] += 1
+    numClicks[row][left(col)] += 1
+    numClicks[row][right(col)] += 1
 }
 
 function solve() {
 
-    solution = [
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false]
+    var numClicks = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
     ]
 
     for (var row = 0; row < numRows; row++) {
         for (var col = 0; col < numCols; col++) {
             if (matrix[row][col]) {
-                solutionClick(row, col)
+                solutionClick(numClicks, row, col)
             }
         }
     }
@@ -140,7 +137,7 @@ function solve() {
         for (var col = 0; col < numCols; col++) {
             var lightId = getLightId(row, col)
 
-            if (solution[row][col]) {
+            if (numClicks[row][col] % 2 == 1) {
                 $(lightId).text("click me")
             } else {
                 $(lightId).text("")

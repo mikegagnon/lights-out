@@ -10,9 +10,25 @@ These lecture notes are just notes; they are intended to be accompanied with in-
 My approach in these lectures is to throw you in the deep end, and show you just enough
 to keep your head above water. In that spirit: your first task is to [learn the game Lights Out](https://mikegagnon.github.io/lights-out/).
 
-# PART 1. HTML and CSS
+## Contents
 
-# Lecture 1. Intro to HTML
+- [PART 1. HTML and CSS](#part1)
+  - [Lecture 1. Intro to HTML](#lec1)
+  - [Lecture 2. Intro to CSS](#lec2)
+  - [Lecture 3. The \<div> tag](#lec3)
+  - [Lecture 4. HTML & CSS framework for Lights Out](#lec4)
+- [PART 2. JAVASCRIPT](#part2)
+  - [Lecture 5. Interaction](#lec5)
+- [Part 3. CODING CHALLENGES](#part3)
+  - [Challenge 1. Toggle lights](#c1)
+  - [Challenge 2. Randomize lights](#c2)
+  - [Challenge 3. Detect victory](#c3)
+  - [Challenge 4. Cross pattern](#c4)
+  - [Challenge 5. The Solver](#c5)
+  
+# <a name="part1">PART 1. HTML and CSS</a>
+
+# <a name="lec1">Lecture 1. Intro to HTML</a>
 
 HTML is a "markup" language — which means you markup plain text with HTML tags.
 
@@ -79,7 +95,7 @@ See the [result](https://mikegagnon.github.io/lights-out/lecture01/example04.htm
 - The `<title>` tag may only appear inside the `<head>` tag. The text inside the `<title>` tag is displayed on the tab in your browser.
 - The `<body>` tag stores everything that should be displayed
 
-# Lecture 2. Intro to CSS
+# <a name="lec2">Lecture 2. Intro to CSS</a>
 
 CSS lets you *style* HTML.
 
@@ -149,7 +165,7 @@ The `<li class="...">` tags attach CSS classes to HTML tags.
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture02/example02.html).
 
-# Lecture 3. The \<div> tag
+# <a name="lec3">Lecture 3. The \<div> tag</a>
 
 The `<div>` tag is a special HTML tag.
 
@@ -395,7 +411,7 @@ Use the same `index.html` file from [Lecture 3, Example 2](#lecture3-example2)
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture03/example08.html).
 
-# Lecture 4
+# <a name="lec4">Lecture 4. HTML & CSS framework for Lights Out</a>
 
 In this lecture, we'll create the HTML and CSS framework for the Lights Out game,
 using the things we've learned from the previous lectures.
@@ -554,9 +570,9 @@ Just use the same `index.html` file from [Lecture 4, Step 2](#lec4ex2).
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture04/example03.html).
 
-# PART 2. Javascript
+# <a name="part2">PART 2. JAVASCRIPT</a>
 
-# Lecture 5
+# <a name="lec5">Lecture 5. Interaction</a>
 
 This lecture introduces how Javascript can interact with HTML and CSS.
 
@@ -809,7 +825,7 @@ To accomplish this feat, add `cursor: pointer;` to the `light` class in `style.c
 
 See the [result](https://mikegagnon.github.io/lights-out/lecture05/example04.html).
 
-# PART 3. CODING CHALLENGES
+# <a name="part3">PART 3. CODING CHALLENGES</a>
 
 # <a name="c1">Challenge 1. Toggle lights</a>
 
@@ -925,7 +941,32 @@ and the light on the bottom row is toggled. So on and so forth for going below, 
 Add code to `lights-out.js` so that the game tells the user which buttons to click to solve the puzzle,
 [like this](https://mikegagnon.github.io/lights-out/challenge05/index.html).
 
+## Setting \<div> text
+
+For this challenge you need to change the text inside of of a `<div>` to say either "click me" or say
+nothing at all, "".
+
+Use jQuery for this, specifically use `$(lightId).text("foo")`
+
+For example:
+
+```js
+var row = 2
+var col = 1
+lightId = "#light-" + row + "-" + col;
+$(lightId).text("click me")
+
+var row = 0
+var col = 0
+lightId = "#light-" + row + "-" + col;
+$(lightId).text("")
+```
+
 - [Hint 1](#c5h1)
+- [Hint 2](#c5h2)
+- [Hint 3](#c5h3)
+- [Hint 4](#c5h4)
+- [Solution](#c5solution)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -1572,9 +1613,167 @@ To turn off exactly one light, click the cross pattern.
 
 For example:
 
-![Solution 1](solution1.png)
+<img src="solution1.png" width=400>
 
 Clicking in the five places it says "click me" will turn the light off, without affecting
 any other lights.
 
+<img src="solution2.png" width=400>
+
+The cross pattern wraps around the edges.
+
 [Try it out](https://mikegagnon.github.io/lights-out/).
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h3">Challenge 5, Hint 3</a>
+
+Here's the algorithm you need to use for your puzzle solver:
+
+- For every light that is turned on, simulate a click on that light.
+- Keep track (in a 4x4 matrix) how many simulated clicks each light received
+- If a light is clicked (simulated) an *even* number of times, then it is as if the light never needs to be clicked in the solution
+- If a light is clicked (simulated) an *odd* number of times, then it is as if the light needs to be clicked exactly once
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h4">Challenge 5, Hint 4</a>
+
+Here's pseudocode for your puzzle solver:
+
+```
+
+var numClicks = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+]
+
+// calculate the solution
+for each row:
+  for each col:
+    if the light is on at (row, col):
+    
+      numClicks[row][col] += 1
+      numClicks[above(row)][col] += 1
+      numClicks[below(row)][col] += 1
+      numClicks[row][left(col)] += 1
+      numClicks[row][right(col)] += 1
+
+// display the solution
+for each row:
+  for each col:
+    if numClicks[row][col] is odd:
+      set text for the light to "click me"
+    else:
+      set text for the light to ""
+```
+
+[Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5solution">Challenge 5, Solution</a>
+
+Create a new function called `getLightId(...)`:
+
+```js
+function getLightId(row, col) {
+    return "#light-" + row + "-" + col;
+}
+```
+
+Create a new function called `solve()`:
+
+```js
+function solve() {
+
+    var numClicks = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+    ]
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            if (matrix[row][col]) {
+
+                numClicks[row][col] += 1
+                numClicks[above(row)][col] += 1
+                numClicks[below(row)][col] += 1
+                numClicks[row][left(col)] += 1
+                numClicks[row][right(col)] += 1
+
+            }
+        }
+    }
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            var lightId = getLightId(row, col)
+
+            if (numClicks[row][col] % 2 == 1) {
+                $(lightId).text("click me")
+            } else {
+                $(lightId).text("")
+            }
+        }
+    }
+
+}
+```
+
+Then call the function `solve()` in two places:
+
+### Right after the puzzle is initialized
+
+```
+var numRows = 4
+var numCols = 4
+
+var matrix = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
+]
+
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+
+        matrix[row][col]  = Math.random() < 0.5;
+        
+        setLightColor(row, col);
+    }
+}
+
+solve(); // <-------------------------------------
+
+```
+
+### Inside the `lightClick(...)` function:
+
+```js
+function lightClick(row, col) {
+
+    lightSwitch(row, col)
+    lightSwitch(above(row), col)
+    lightSwitch(below(row), col)
+    lightSwitch(row, left(col))
+    lightSwitch(row, right(col))
+
+    solve(); // <---------------------------
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
+[Back to Challenge 5](#c5)

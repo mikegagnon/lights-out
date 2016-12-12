@@ -1680,4 +1680,100 @@ for each row:
 
 ## <a name="c5solution">Challenge 5, Solution</a>
 
+Create a new function called `getLightId(...)`:
+
+```js
+function getLightId(row, col) {
+    return "#light-" + row + "-" + col;
+}
+```
+
+Create a new function called `solve()`:
+
+```js
+function solve() {
+
+    var numClicks = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+    ]
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            if (matrix[row][col]) {
+
+                numClicks[row][col] += 1
+                numClicks[above(row)][col] += 1
+                numClicks[below(row)][col] += 1
+                numClicks[row][left(col)] += 1
+                numClicks[row][right(col)] += 1
+
+            }
+        }
+    }
+
+    for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+            var lightId = getLightId(row, col)
+
+            if (numClicks[row][col] % 2 == 1) {
+                $(lightId).text("click me")
+            } else {
+                $(lightId).text("")
+            }
+        }
+    }
+
+}
+```
+
+Then call the function `solve()` in two places:
+
+### Right after the puzzle is initialized
+
+```
+var numRows = 4
+var numCols = 4
+
+var matrix = [
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false],
+    [false, false, false, false]
+]
+
+for (var row = 0; row < numRows; row++) {
+    for (var col = 0; col < numCols; col++) {
+
+        matrix[row][col]  = Math.random() < 0.5;
+        
+        setLightColor(row, col);
+    }
+}
+
+solve(); // <-------------------------------------
+
+```
+
+### Inside the `lightClick(...)` function:
+
+```js
+function lightClick(row, col) {
+
+    lightSwitch(row, col)
+    lightSwitch(above(row), col)
+    lightSwitch(below(row), col)
+    lightSwitch(row, left(col))
+    lightSwitch(row, right(col))
+
+    solve(); // <---------------------------
+
+    if (checkWin()) {
+        alert("You win!")
+    }
+}
+```
+
 [Back to Challenge 5](#c5)

@@ -1613,3 +1613,40 @@ Here's the algorithm you need to use for your puzzle solver:
 - If a light is clicked (simulated) an *odd* number of times, then it is as if the light needs to be clicked exactly once
 
 [Back to Challenge 5](#c5)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## <a name="c5h4">Challenge 5, Hint 4</a>
+
+Here's pseudocode for your puzzle solver:
+
+```
+
+var numClicks = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+]
+
+// calculate the solution
+for each row:
+  for each col:
+    if the light is on at (row, col):
+    
+      numClicks[row][col] += 1
+      numClicks[above(row)][col] += 1
+      numClicks[below(row)][col] += 1
+      numClicks[row][left(col)] += 1
+      numClicks[row][right(col)] += 1
+
+// display the solution
+for each row:
+  for each col:
+    if numClicks[row][col] is odd:
+      set text for the light to "click me"
+    else:
+      set text for the light to ""
+```
+
+[Back to Challenge 5](#c5)

@@ -43,14 +43,16 @@ to keep your head above water. In that spirit: your first task is to [learn the 
     - importing `.js` files with the `<script>` tag
     - `jQuery` used via  `$(...)` function
     - `id` HTML attribute
-    - `$(lightId).css(...)` jQuery function
+    - `$(...).css(...)` jQuery function
     - `cursor: pointer` CSS property
 - [Part 3. CODING CHALLENGES](#part3)
   - [Challenge 1. Toggle lights](#c1)
   - [Challenge 2. Randomize lights](#c2)
+    - Move `<script src="lights-out.js"></script>` tag to bottom of `index.html`
   - [Challenge 3. Detect victory](#c3)
   - [Challenge 4. Cross pattern](#c4)
   - [Challenge 5. The Solver](#c5)
+    - `$(...).text(...)` jQuery function
   
 # <a name="part1">PART 1. HTML and CSS</a>
 

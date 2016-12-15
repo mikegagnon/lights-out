@@ -37,6 +37,14 @@ to keep your head above water. In that spirit: your first task is to [learn the 
     - `margin-top` CSS property
 - [PART 2. JAVASCRIPT](#part2)
   - [Lecture 5. Interaction](#lec5)
+    - `onclick` HTML attribute
+    - `alert(...)` JavaScript function
+    - `.js` files
+    - importing `.js` files with the `<script>` tag
+    - `jQuery` used via  `$(...)` function
+    - `id` HTML attribute
+    - `$(lightId).css(...)` jQuery function
+    - `cursor: pointer` CSS property
 - [Part 3. CODING CHALLENGES](#part3)
   - [Challenge 1. Toggle lights](#c1)
   - [Challenge 2. Randomize lights](#c2)

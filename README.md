@@ -14,9 +14,27 @@ to keep your head above water. In that spirit: your first task is to [learn the 
 
 - [PART 1. HTML and CSS](#part1)
   - [Lecture 1. Intro to HTML](#lec1)
+    - `<i>` italics tag
+    - `<b>` bold tag
+    - `<p>` paragraph tag
+    - `<ul>` and `<li>` list tags
+    - A proper HTML file template
   - [Lecture 2. Intro to CSS](#lec2)
+    - `background` CSS property
+    - `.css` files
+    - Importing `.css` files with the `<link>` tag
+    - `class` HTML attribute
   - [Lecture 3. The \<div> tag](#lec3)
+    - Styling `<div>` tags
+    - `height` and `width` CSS properties
+    - `float: left` CSS property
+    - `margin-left` CSS property
+    - `text-align: center` CSS property
+    - `line-height` CSS property
+    - `font-family` CSS property
   - [Lecture 4. HTML & CSS framework for Lights Out](#lec4)
+    - `clear-left` CSS property
+    - `margin-top` CSS property
 - [PART 2. JAVASCRIPT](#part2)
   - [Lecture 5. Interaction](#lec5)
 - [Part 3. CODING CHALLENGES](#part3)
